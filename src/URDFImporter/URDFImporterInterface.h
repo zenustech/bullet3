@@ -106,7 +106,7 @@ public:
     ///optionally create some graphical representation from a collision object, usually for visual debugging purposes.
 
     virtual void createCollisionObjectGraphicsInstance(int linkIndex, class btCollisionObject* colObj, const btVector3& colorRgba) const {};
-    virtual std::map<int, std::shared_ptr<zeno::PrimitiveObject>> getVisualMap() const {};
+    virtual std::map<int, std::shared_ptr<zeno::PrimitiveObject>> getVisualMap() const { return {}; };
 
 };
 
