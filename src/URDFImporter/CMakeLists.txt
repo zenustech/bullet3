@@ -1,7 +1,7 @@
 INCLUDE_DIRECTORIES(
         ${BULLET_PHYSICS_SOURCE_DIR}/src
-        ${BULLET_PHYSICS_SOURCE_DIR}/../../../zenocore/include
-        ${BULLET_PHYSICS_SOURCE_DIR}/../../../zenocore/tpls/include
+        ${BULLET_PHYSICS_SOURCE_DIR}/../../../zeno/include
+        ${BULLET_PHYSICS_SOURCE_DIR}/../../../zeno/tpls/include
 )
 
 SET(URDF_SRCS
