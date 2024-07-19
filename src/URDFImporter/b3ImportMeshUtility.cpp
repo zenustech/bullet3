@@ -7,8 +7,7 @@
 #include "Bullet3Common/b3FileUtils.h"
 #include "Bullet3Common/b3HashMap.h"
 #include "CommonFileIOInterface.h"
-#include "zeno/types/ListObject.h"
-#include "zeno/fileio.h"
+#include <zeno/utils/fileio.h>
 #include "ReadObjPrim.h"
 
 struct CachedTextureResult

@@ -1,9 +1,5 @@
 INCLUDE_DIRECTORIES(
         ${BULLET_PHYSICS_SOURCE_DIR}/src
-        ${BULLET_PHYSICS_SOURCE_DIR}/../../../zenocore/include
-        ${BULLET_PHYSICS_SOURCE_DIR}/../../../zenocore/tpls/include
-	${BULLET_PHYSICS_SOURCE_DIR}/../../../zenocore/reflectCrates/libreflect/include
-        ${BULLET_PHYSICS_SOURCE_DIR}/../../../zenocore/reflectCrates/libgenerated/include
 )
 
 SET(URDF_SRCS
@@ -41,6 +37,8 @@ TARGET_INCLUDE_DIRECTORIES(
 IF (BUILD_SHARED_LIBS)
     TARGET_LINK_LIBRARIES(URDFImporter BulletCollision LinearMath)
 ENDIF (BUILD_SHARED_LIBS)
+
+target_link_libraries(URDFImporter PUBLIC zenocore)
 
 IF (NOT MSVC)
     IF (NOT INTERNAL_CREATE_DISTRIBUTABLE_MSVC_PROJECTFILES)

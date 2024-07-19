@@ -10,7 +10,7 @@
 #include "../btBulletDynamicsCommon.h"
 #include "../BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h"
 #include "URDFJointTypes.h"
-#include "zeno/types/PrimitiveObject.h"
+
 
 MyMultiBodyCreator::MyMultiBodyCreator()
 	: m_bulletMultiBody(0),
